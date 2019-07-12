@@ -8,7 +8,7 @@
 
 ## About
 
-A small package of various pixel shaders for processing textures in the Jitter OpenGL world. The abstractions give quick access to disable/enabling of the shaders, and setting parameters through lists of values or single values in inlets. The comments on the inlet explain the parameters.
+A small package of various pixel shaders for processing textures in the Jitter OpenGL world. The abstractions give quick access to disable/enabling of the shaders, and setting parameters through lists of values or single values in inlets. Some are simply a wrapper for a jit.gl.slab object loaded with a shader that is shipped with Max. Some are wrapped around a shader ported from shadertoy or coded by other creative minds! Original sources listed below. The comments on the inlet explain the order of parameters. Open the help-patcher for further details and workings.
 
 ## Contains
 
