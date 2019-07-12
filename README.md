@@ -33,12 +33,16 @@ A small package of various pixel shaders for processing textures in the Jitter O
 ## Sources
 
 Technicolor pixel shaders ported from the original GLSL shaders by vade
-http://001.vade.info
 
-GPU Noise algorithm based on http://byteblacksmith.com/improvements-to-the-canonical-one-liner-glsl-rand-for-opengl-es-2-0/
+- http://001.vade.info
 
-Duotone gen-code loosly based on Micron's patch:
-https://www.patreon.com/posts/easy-duotone-19824702
+GPU Noise algorithm based on 
+
+- http://byteblacksmith.com/improvements-to-the-canonical-one-liner-glsl-rand-for-opengl-es-2-0/
+
+Duotone gen-code loosly based on Micron's patch
+
+- https://www.patreon.com/posts/easy-duotone-19824702
 
 ## Install
 
