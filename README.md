@@ -16,6 +16,8 @@ A small package of various pixel shaders for processing textures in the Jitter O
 
 - **pix.brcosa** - *Adjust brightness, contrast and saturation of a texture*
 
+- **pix.degrade** - *Downsample the resolution or the colordepth of the texture*
+
 - **pix.duotone** - *Change a texture to two colors based on grayscale*
 
 - **pix.frame** - *Add a border surrounding the texture, adjust border width and color*
