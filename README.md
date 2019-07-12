@@ -12,19 +12,23 @@ A small package of various pixel shaders for processing textures in the Jitter O
 
 ## Contains
 
+- **pix.blur** - *Add a focus- or tilt-blur effect, similar to instagram filter blur*
+
+- **pix.brcosa** - *Adjust brightness, contrast and saturation of a texture*
+
+- **pix.duotone** - *Change a texture to two colors based on grayscale*
+
+- **pix.frame** - *Add a border surrounding the texture, adjust border width and color*
+
+- **pix.noise** - *Add gpu noise to an image, adjust threshold, smoothing and add/subtraction from texture*
+
+- **pix.saturation** - *Adjust saturation of a texture*
+
 - **pix.technicolor1** - *A technicolor shader - results in a orange/brown tint*
 
 - **pix.technicolor2** - *A technicolor shader - results in a white/purple tint*
 
 - **pix.technicolor3** - *A technicolor shader - results in a red/yellow tint*
-
-- **pix.brcosa** - *Adjust brightness, contrast and saturation of a texture*
-
-- **pix.saturation** - *Adjust saturation of a texture*
-
-- **pix.frame** - *Add a border surrounding the texture, adjust border width and color*
-
-- **pix.noise** - *Add gpu noise to an image, adjust threshold, smoothing and add/subtraction from texture*
 
 ## Sources
 
@@ -32,6 +36,9 @@ Technicolor pixel shaders ported from the original GLSL shaders by vade
 http://001.vade.info
 
 GPU Noise algorithm based on http://byteblacksmith.com/improvements-to-the-canonical-one-liner-glsl-rand-for-opengl-es-2-0/
+
+Duotone gen-code loosly based on Micron's patch:
+https://www.patreon.com/posts/easy-duotone-19824702
 
 ## Install
 
