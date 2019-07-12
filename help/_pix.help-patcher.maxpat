@@ -39,6 +39,67 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 511.0, 540.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 537.0, 570.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-17",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 451.0, 540.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 451.0, 570.0, 79.25, 22.0 ],
+					"text" : "pak f i"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 405.0, 615.0, 111.0, 22.0 ],
+					"text" : "pix.degrade 0.3 8 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -999,6 +1060,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-69", 0 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 2 ],
 					"source" : [ "obj-13", 0 ]
 				}
@@ -1020,8 +1088,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 1 ],
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 1 ],
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -1069,6 +1151,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 2 ],
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
@@ -1099,6 +1188,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
 					"source" : [ "obj-33", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 1 ],
+					"source" : [ "obj-34", 0 ]
 				}
 
 			}
@@ -1327,7 +1423,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-69", 0 ],
+					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-86", 0 ]
 				}
 
@@ -1411,6 +1507,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "saturation.genjit",
+				"bootpath" : "~/Documents/Max 7/Library/abstractions/gl-pix-shaders/code",
+				"patcherrelativepath" : "../code",
+				"type" : "gJIT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pix.brcosa.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/abstractions/gl-pix-shaders/patchers",
 				"patcherrelativepath" : "../patchers",
@@ -1439,6 +1542,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "noise.genjit",
+				"bootpath" : "~/Documents/Max 7/Library/abstractions/gl-pix-shaders/code",
+				"patcherrelativepath" : "../code",
+				"type" : "gJIT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "pix.duotone.maxpat",
 				"bootpath" : "~/Documents/Max 7/Library/abstractions/gl-pix-shaders/patchers",
 				"patcherrelativepath" : "../patchers",
@@ -1450,6 +1560,20 @@
 				"bootpath" : "~/Documents/Max 7/Library/abstractions/gl-pix-shaders/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pix.degrade.maxpat",
+				"bootpath" : "~/Documents/Max 7/Library/abstractions/gl-pix-shaders/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "degrade.genjit",
+				"bootpath" : "~/Documents/Max 7/Library/abstractions/gl-pix-shaders/code",
+				"patcherrelativepath" : "../code",
+				"type" : "gJIT",
 				"implicit" : 1
 			}
  ],
