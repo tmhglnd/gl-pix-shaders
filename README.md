@@ -1,8 +1,8 @@
 # gl-pix-shaders
 
-**Please consider to download and donate via http://gumroad.com/tmhglnd**
+**Find my Audiovisual projects on http://gumroad.com/tmhglnd**
 
-**or become a patron on http://patreon.com/timohoogland**
+**Consider to become a patron on http://patreon.com/timohoogland**
 
 ---
 
