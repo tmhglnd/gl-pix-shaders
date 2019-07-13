@@ -65,5 +65,6 @@ Git clone
 ```
 ## License
 
-The software is licensed under:
+This software is licensed under:
+
 The MIT License
