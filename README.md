@@ -16,7 +16,11 @@ A small package of various pixel shaders for processing textures in the Jitter O
 
 - **pix.brcosa** - *Adjust brightness, contrast and saturation of a texture*
 
+- **pix.brightness** - *Adjust brightness of a texture*
+
 - **pix.chromakey** - *Chromakey a texture, outputting the same texture with a alphachannel for the keyed color*
+
+- **pix.edgedetect** - *Detect edges in a texture and output a black/white texture only showing detected edges*
 
 - **pix.degrade** - *Downsample the resolution or the colordepth of the texture*
 
