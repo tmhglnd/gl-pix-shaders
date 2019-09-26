@@ -20,6 +20,8 @@ A small package of various pixel shaders for processing textures in the Jitter O
 
 - **pix.chromakey** - *Chromakey a texture, outputting the same texture with a alphachannel for the keyed color*
 
+- **pix.contrast** - *Adjust contrast of a texture*
+
 - **pix.displace** - *Displace the green component of a texture with a low resolution noise matrix. Adjust displace distance, variation and dimensions of noise*
 
 - **pix.edgedetect** - *Detect edges in a texture and output a black/white texture only showing detected edges*
