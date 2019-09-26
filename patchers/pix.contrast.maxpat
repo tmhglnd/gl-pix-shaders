@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 488.0, 139.0, 761.0, 714.0 ],
+		"rect" : [ 268.0, 132.0, 761.0, 714.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -331,9 +331,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(float) brightness",
+					"comment" : "(float) contrast",
 					"id" : "obj-19",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -370,11 +370,11 @@
 				"box" : 				{
 					"comment" : "(int) enable/disable",
 					"id" : "obj-22",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 255.0, 45.0, 30.0, 30.0 ]
 				}
 
@@ -383,7 +383,7 @@
 				"box" : 				{
 					"comment" : "(texture) jit_gl_texture",
 					"id" : "obj-24",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -396,7 +396,7 @@
 				"box" : 				{
 					"comment" : "(texture) processed output",
 					"id" : "obj-25",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -546,8 +546,6 @@
 
 			}
  ],
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
