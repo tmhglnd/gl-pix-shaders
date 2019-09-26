@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 543.0, 128.0, 863.0, 638.0 ],
+		"rect" : [ 86.0, 172.0, 863.0, 638.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -255,7 +255,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(float) saturation",
+					"comment" : "(list) linewidth, threshold",
 					"id" : "obj-19",
 					"index" : 2,
 					"maxclass" : "inlet",
