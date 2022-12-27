@@ -13,7 +13,13 @@ A small package of various pixel shaders for processing textures in the Jitter O
 
 ## New
 
-- `pix.blend`, `pix.displace`, `pix.delay`, `pix.feedback`, `pix.filter`, `pix.grid`, `pix.pong`, `pix.shift`, `pix.sort`, `pix.static`, `pix.xfade`
+`pix.blend`, `pix.displace`, `pix.delay`, `pix.feedback`, `pix.filter`, `pix.grid`, `pix.pong`, `pix.shift`, `pix.sort`, `pix.static`, `pix.xfade`
+
+![](./images/screenshot0.png)
+
+![](./images/screenshot1.png)
+
+![](./images/screenshot2.png)
 
 ## Contains
 
@@ -97,8 +103,9 @@ Git clone
 2. $ git clone https://github.com/tmhglnd/gl-pix-shaders.git
 3. restart Max8
 ```
+To see overview of all objects
 ```
-4. Open _pix.help-patcher.maxpat
+open pix-shaders-launch.maxpat
 ```
 ## License
 
