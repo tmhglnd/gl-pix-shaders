@@ -170,25 +170,13 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-2",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 45.0, 45.0, 87.0, 22.0 ],
-									"text" : "vec 0.5 0.5 0.5"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-6",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
+									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 45.0, 180.0, 47.0, 22.0 ],
-									"text" : "clip 0 1"
+									"patching_rect" : [ 120.0, 90.0, 118.0, 22.0 ],
+									"text" : "param shift 0.1 0 0 0"
 								}
 
 							}
@@ -196,11 +184,35 @@
 								"box" : 								{
 									"id" : "obj-5",
 									"maxclass" : "newobj",
-									"numinlets" : 0,
+									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 105.0, 75.0, 99.0, 22.0 ],
-									"text" : "param contrast 1"
+									"patching_rect" : [ 45.0, 135.0, 29.5, 22.0 ],
+									"text" : "+"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 45.0, 300.0, 48.0, 22.0 ],
+									"text" : "hsl2rgb"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 45.0, 90.0, 48.0, 22.0 ],
+									"text" : "rgb2hsl"
 								}
 
 							}
@@ -211,20 +223,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 75.0, 75.0, 28.0, 22.0 ],
+									"patching_rect" : [ 45.0, 45.0, 28.0, 22.0 ],
 									"text" : "in 1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 45.0, 120.0, 79.0, 22.0 ],
-									"text" : "mix"
 								}
 
 							}
@@ -234,7 +234,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 45.0, 225.0, 35.0, 22.0 ],
+									"patching_rect" : [ 45.0, 345.0, 35.0, 22.0 ],
 									"text" : "out 1"
 								}
 
@@ -242,35 +242,35 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 1 ],
+									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
+									"destination" : [ "obj-5", 0 ],
 									"source" : [ "obj-2", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-6", 0 ],
+									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 2 ],
+									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-5", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
+									"destination" : [ "obj-5", 1 ],
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -278,8 +278,8 @@
  ]
 					}
 ,
-					"patching_rect" : [ 169.75, 420.0, 113.0, 22.0 ],
-					"text" : "jit.gl.pix @t contrast"
+					"patching_rect" : [ 169.75, 420.0, 112.0, 22.0 ],
+					"text" : "jit.gl.pix @t hsbshift"
 				}
 
 			}
@@ -338,8 +338,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 169.75, 158.0, 68.0, 22.0 ],
-					"text" : "contrast $1"
+					"patching_rect" : [ 169.75, 158.0, 77.0, 22.0 ],
+					"text" : "shift $1 0 0 0"
 				}
 
 			}
@@ -351,13 +351,13 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 330.0, 45.0, 152.0, 127.0 ],
-					"text" : "arguments/params:\n<float> contrast\n\nA wrapper for a simple linear contrast shader\n\nTimo Hoogland (c) 2019\nwww.timohoogland.com\nMIT License"
+					"text" : "arguments/params:\n<float> hue shift\n\nA wrapper for a simple hue shift pix shader\n\nTimo Hoogland (c) 2022\nwww.timohoogland.com\nMIT License"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(float) contrast",
+					"comment" : "(float) hue shift",
 					"cool" : 1,
 					"id" : "obj-19",
 					"index" : 2,
@@ -377,7 +377,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 105.0, 45.0, 30.0, 30.0 ]
 				}
 

@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 8,
+			"minor" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "jit.gen",
-		"rect" : [ 84.0, 129.0, 560.0, 615.0 ],
+		"rect" : [ 829.0, 213.0, 560.0, 615.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-26",
@@ -376,6 +377,7 @@
 
 			}
  ],
+		"autosave" : 0,
 		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ]
 	}
 

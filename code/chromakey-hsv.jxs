@@ -70,7 +70,7 @@ void main()
     float len = length(vec3(4., 1., 2.) * (rgb2hsv(color.rgb) - rgb2hsv(a.rgb)));
 	float scale = smoothstep(abs(tol),abs(tol)+abs(fade),len);
 	// gl_FragColor = mix(b, a, scale);
-	gl_FragColor = vec4(a.rgb, scale);
+	gl_FragColor = vec4(scale);
 }
 
 ]]>

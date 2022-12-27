@@ -8,9 +8,15 @@
 
 ## About
 
-A small package of various pixel shaders for processing textures in the Jitter OpenGL world. The abstractions give quick access to disable/enabling of the shaders, and setting parameters through lists of values or single values in inlets. Some are simply a wrapper for a jit.gl.slab object loaded with a shader that is shipped with Max. Some are wrapped around a shader ported from shadertoy or coded by other creative minds! Original sources listed below. The comments on the inlet explain the order of parameters. Open the help-patcher for further details and workings.
+A small package of various pixel shaders for processing textures in the Jitter OpenGL world. The abstractions give quick access to disable/enabling of the shaders, and setting parameters through lists of values or single values in inlets. Some are simply a wrapper for a jit.gl.slab object loaded with a shader that is shipped with Max8. Some are wrapped around a shader ported from shadertoy or coded by other creative minds! Original sources listed below. Others are shaders that I regularly use myself and coded for ease of reuse. The comments on the inlet explain the order of parameters. Open the help-patcher for further details and workings.
+
+## New
+
+- `pix.blend`, `pix.displace`, `pix.delay`, `pix.feedback`, `pix.filter`, `pix.grid`, `pix.pong`, `pix.shift`, `pix.sort`, `pix.static`, `pix.xfade`
 
 ## Contains
+
+- **pix.blend** - *Blend 2 textures with different modes such as average, difference, exclude, darken, screen, etc.*
 
 - **pix.blur** - *Add a focus- or tilt-blur effect, similar to instagram filter blur*
 
@@ -22,25 +28,45 @@ A small package of various pixel shaders for processing textures in the Jitter O
 
 - **pix.contrast** - *Adjust contrast of a texture*
 
-- **pix.displace** - *Displace the green component of a texture with a low resolution noise matrix. Adjust displace distance, variation and dimensions of noise*
-
-- **pix.edgedetect** - *Detect edges in a texture and output a black/white texture only showing detected edges*
-
 - **pix.degrade** - *Downsample the resolution or the colordepth of the texture*
+
+- **pix.delay** - *Delay a texture an n-amount of frames*
+
+- **pix.displace** - *Displace a texture's pixel positions with the input of another texture*
 
 - **pix.duotone** - *Change a texture to two colors based on grayscale*
 
+- **pix.edgedetect** - *Detect edges in a texture and output a black/white texture only showing detected edges*
+
+- **pix.feedback** - *Create a feedback loop with different blending modes such as mix-max, mix-min, mix and additive*
+
+- **pix.filter** - *Apply various convolution filters such as dilate, emboss, laplace, sobel, etc.*
+
 - **pix.frame** - *Add a border surrounding the texture, adjust border width and color*
+
+- **pix.glitch** - *Displace the green component of a texture with a low resolution noise matrix. Adjust displace distance, variation and dimensions of noise (was pix.displace)*
+
+- **pix.grid** - *Generate a simple grid texture of lines*
 
 - **pix.noise** - *Add gpu noise to an image, adjust threshold, smoothing and add/subtraction from texture*
 
+- **pix.pong** - *Similar to the `pong` and `pong~` objects, applying a fold, wrap or clip to a texture*
+
 - **pix.saturation** - *Adjust saturation of a texture*
+
+- **pix.shift** - *Shift the hue (color value) of a texture*
+
+- **pix.sort** - *Simple pixelsorting by comparing current pixel with an adjecent pixel in adjustable direction and output the higher hue value* 
+
+- **pix.static** - *Output noise for the dimension of the incoming texture*
 
 - **pix.technicolor1** - *A technicolor shader - results in a orange/brown tint*
 
 - **pix.technicolor2** - *A technicolor shader - results in a white/purple tint*
 
 - **pix.technicolor3** - *A technicolor shader - results in a red/yellow tint*
+
+- **pix.xfade** - *Similar to `jit.xfade`, linear interpolation between 2 textures*
 
 ## Sources
 
