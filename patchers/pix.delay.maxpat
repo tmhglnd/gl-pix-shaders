@@ -66,7 +66,7 @@
 				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_gl_texture" ],
 					"patcher" : 					{
@@ -109,6 +109,31 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-10",
+									"index" : 4,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 329.0, 247.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 329.0, 300.0, 35.0, 22.0 ],
+									"text" : "clear"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"comment" : "",
 									"id" : "obj-11",
@@ -289,6 +314,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-16", 1 ],
 									"order" : 2,
 									"source" : [ "obj-11", 0 ]
@@ -411,6 +443,13 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -455,12 +494,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-19",
-					"linecount" : 11,
+					"linecount" : 14,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 345.0, 120.0, 211.0, 154.0 ],
-					"text" : "arguments:\n<int> delaytime in frame\n<int> maximum delaylength\n\nA texture delay object. Set the delaytime in frames. Adjust maximum delaylength in frames. \n\nTimo Hoogland (c) 2022\nwww.timohoogland.com\nMIT License"
+					"patching_rect" : [ 360.0, 120.0, 211.0, 194.0 ],
+					"text" : "arguments:\n<int> delaytime in frame\n<int> maximum delaylength\n\nmessages:\n(clear) - clear all the textures\n\nA texture delay object. Set the delaytime in frames. Adjust maximum delaylength in frames. \n\nTimo Hoogland (c) 2022\nwww.timohoogland.com\nMIT License"
 				}
 
 			}
@@ -480,11 +519,11 @@
 				"box" : 				{
 					"id" : "obj-26",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 189.0, 285.0, 121.0, 22.0 ],
-					"text" : "routepass int float list"
+					"numinlets" : 5,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 189.0, 285.0, 151.0, 22.0 ],
+					"text" : "routepass int float list clear"
 				}
 
 			}
@@ -569,7 +608,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 108.5, 45.0, 30.0, 30.0 ]
 				}
 
@@ -582,7 +621,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 75.0, 45.0, 30.0, 30.0 ]
 				}
 
@@ -668,8 +707,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"midpoints" : [ 266.5, 317.0, 323.5, 317.0, 323.5, 109.0, 198.5, 109.0 ],
+					"midpoints" : [ 264.5, 317.0, 323.5, 317.0, 323.5, 109.0, 198.5, 109.0 ],
 					"source" : [ "obj-26", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 3 ],
+					"source" : [ "obj-26", 3 ]
 				}
 
 			}
