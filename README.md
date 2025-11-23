@@ -1,5 +1,5 @@
 
-# Pix Shaders v.2.0
+# Pix Shaders v.2.1
 
 **Find my Audiovisual projects on http://gumroad.com/tmhglnd**
 
