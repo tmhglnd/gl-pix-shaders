@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 3,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -275,7 +275,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 390.0, 195.0, 210.0, 154.0 ],
-					"text" : "arguments/params:\n<int/symbol> blend mode\n<float> width (default=0.5)\n\nVarious convolution filter modes for a texture inputs. Use an index to select blendmode or dump to fill a umenu.\n\nTimo Hoogland (c) 2022\nwww.timohoogland.com\nMIT License"
+					"text" : "arguments/params:\n<int/symbol> filter mode\n<float> width (default=0.5)\n\nVarious convolution filter modes for a texture inputs. Use an index to select blendmode or dump to fill a umenu.\n\nTimo Hoogland (c) 2022\nwww.timohoogland.com\nMIT License"
 				}
 
 			}
@@ -410,7 +410,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 150.0, 45.0, 30.0, 30.0 ]
 				}
 
@@ -423,7 +423,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_gl_texture" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 29.0, 45.0, 30.0, 30.0 ]
 				}
 
