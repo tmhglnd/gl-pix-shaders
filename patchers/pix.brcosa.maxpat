@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 3,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -140,11 +140,11 @@
 				"box" : 				{
 					"id" : "obj-91",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_gl_texture", "" ],
-					"patching_rect" : [ 169.75, 496.0, 159.0, 22.0 ],
-					"text" : "jit.gl.slab @file cc.brcosa.jxs"
+					"patching_rect" : [ 169.75, 496.0, 155.0, 22.0 ],
+					"text" : "jit.gl.pix @gen brcosa.genjit"
 				}
 
 			}

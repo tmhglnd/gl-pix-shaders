@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 3,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -418,7 +418,6 @@
 , 			{
 				"box" : 				{
 					"comment" : "(int/symbol) blend mode",
-					"cool" : 1,
 					"id" : "obj-6",
 					"index" : 3,
 					"maxclass" : "inlet",
@@ -437,7 +436,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "jit_gl_texture" ],
 					"patching_rect" : [ 29.0, 45.0, 30.0, 30.0 ]
 				}
 
