@@ -1,5 +1,5 @@
 
-# Pix Shaders v.2.2
+# Pix Shaders v.2.3.0
 
 **Find my Audiovisual projects on http://gumroad.com/tmhglnd**
 
@@ -22,6 +22,10 @@ A small package of various pixel shaders for processing textures in the Jitter O
 ![](./images/screenshot2.png)
 
 ## Contains
+
+- **pix.alpha.add** - *Add an alpha channel to a texture, using the alpha channel from another texture*
+
+- **pix.alpha.remove** - *Remove the alpha channel from a texture, replacing it with full opacity*
 
 - **pix.blend** - *Blend 2 textures with different modes such as average, difference, exclude, darken, screen, etc.*
 
@@ -51,9 +55,15 @@ A small package of various pixel shaders for processing textures in the Jitter O
 
 - **pix.frame** - *Add a border surrounding the texture, adjust border width and color*
 
+- **pix.gamma.correct** - *Correct the gamma for a linear color space image (converting it to sRGB)*
+
+- **pix.gamma.expand** - *Expand the gamma for an sRGB color space image (converting it to linear)*
+
 - **pix.glitch** - *Displace the green component of a texture with a low resolution noise matrix. Adjust displace distance, variation and dimensions of noise (was pix.displace)*
 
 - **pix.grid** - *Generate a simple grid texture of lines*
+
+- **pix.mask** - *Generate a black/white mask from a texture based on luminance/hue and a set range*
 
 - **pix.noise** - *Add gpu noise to an image, adjust threshold, smoothing and add/subtraction from texture*
 
@@ -88,6 +98,10 @@ GPU Noise algorithm based on
 Duotone gen-code loosly based on Micron's patch
 
 - https://www.patreon.com/posts/easy-duotone-19824702
+
+Gamma expanding and correction based on
+
+- https://docs.cycling74.com/learn/articles/01-color-management/
 
 ## Install
 
