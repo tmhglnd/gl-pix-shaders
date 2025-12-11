@@ -263,8 +263,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 435.0, 120.0, 115.0, 22.0 ],
-									"text" : "param tolerance 0.1"
+									"patching_rect" : [ 435.0, 120.0, 208.0, 22.0 ],
+									"text" : "param tolerance 0.1 @min 0 @max 1"
 								}
 
 							}
@@ -406,8 +406,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 281.0, 75.0, 117.0, 22.0 ],
-									"text" : "param range 0.2 0.5"
+									"patching_rect" : [ 281.0, 75.0, 210.0, 22.0 ],
+									"text" : "param range 0.2 0.5 @min 0 @max 1"
 								}
 
 							}
